@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol de Oro - Bebida Energética Artesanal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css sol de oro.css">
+</head>
+
+<body>
+    <header>
+        <img src="logosol.jpg" alt="Logo Sol de Oro">
+        <h1>Sol de Oro - Bebida Energética Artesanal</h1>
+        <p>¡Recarga tu energía de manera saludable!</p>
+    </header>
+
+    <nav class="menu-principal">
+        <div class="contenedor nav-contenedor">
+            <ul class="menu">
+                <li><a href="#inicio" class="activo">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito">Carrito <span id="contador-carrito">0</span></a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="menu-movil">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenedor" id="inicio">
+        <section class="seccion">
+            <h2>Nuevo Sabor</h2>
+            <img src="bebidfa.jpg" alt="Sol de Oro Bebida Energética Natural" class="imagen-producto">
+        </section>
+
+        <section class="seccion">
+            <h2>Información Nutricional</h2>
+            <table class="tabla-nutricional">
+                <tr>
+                    <th>Componente</th>
+                    <th>Cantidad por porción</th>
+                </tr>
+                <tr>
+                    <td>Calorías</td>
+                    <td>50 kcal</td>
+                </tr>
+                <tr>
+                    <td>Azúcares</td>
+                    <td>0 g</td>
+                </tr>
+                <tr>
+                    <td>Proteínas</td>
+                    <td>1 g</td>
+                </tr>
+                <tr>
+                    <td>Grasas Totales</td>
+                    <td>0 g</td>
+                </tr>
+                <tr>
+                    <td>Carbohidratos</td>
+                    <td>12 g</td>
+                </tr>
+                <tr>
+                    <td>Vitaminas y Minerales</td>
+                    <td>Vitaminas B, C, Calcio, Magnesio</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="seccion">
+            <h2>Elaboración Artesanal</h2>
+            <p>Nuestra bebida energética se elabora de manera artesanal, garantizando la calidad y el sabor en cada
+                botella. El proceso incluye:</p>
+            <ul>
+                <li><strong>Selección de Ingredientes:</strong> Elegimos guaraná, maca y té verde de fuentes locales y
+                    orgánicas.</li>
+                <li><strong>Extracción y Mezcla:</strong> Los ingredientes se extraen y mezclan cuidadosamente para
+                    preservar sus propiedades.</li>
+                <li><strong>Fermentación Natural:</strong> Permitimos una fermentación controlada que potencia los
+                    beneficios nutricionales.</li>
+                <li><strong>Embotellado Manual:</strong> Cada botella se llena y sella manualmente para asegurar la
+                    frescura.</li>
+            </ul>
+        </section>
+    </div>
+
+
+    <div class="contenedor" id="productos">
+        <h2 class="titulo-seccion">Nuestros Productos</h2>
+
+        <div class="productos-grid">
+
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="bebidfa.jpg" alt="Sol de Oro Original">
+                </div>
+                <div class="producto-info">
+                    <h3>Berry Explosion</h3>
+                    <p class="producto-descripcion">Nuestra NUEV bebida de una deliciosa mezcla de frutos rojos con un
+                        toque de miel</p>
+                    <div class="producto-detalles">
+                        <span class="producto-precio">$23.00 MXN</span>
+                        <button class="btn-agregar" data-id="1" data-nombre="Berry Explosion" data-precio="23">
+                            <i class="fas fa-shopping-cart"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="detox.jpg" alt="Sol de Oro Cítrico">
+                </div>
+                <div class="producto-info">
+                    <h3>Verde Detox</h3>
+                    <p class="producto-descripcion">Refrescante mezcla con Manzana verde, Kiwi y toque de menta.</p>
+                    <div class="producto-detalles">
+                        <span class="producto-precio">$23.00 MXN</span>
+                        <button class="btn-agregar" data-id="2" data-nombre="Verde Detox" data-precio="23">
+                            <i class="fas fa-shopping-cart"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="cofee.jpg" alt="Sol de Oro Frutos Rojos">
+                </div>
+                <div class="producto-info">
+                    <h3>Energy Cofee</h3>
+                    <p class="producto-descripcion">Deliciosa combinación de Cafe con notas de vainilla y canela.</p>
+                    <div class="producto-detalles">
+                        <span class="producto-precio">$23.00 MXN</span>
+                        <button class="btn-agregar" data-id="3" data-nombre="Energy Cofee" data-precio="23">
+                            <i class="fas fa-shopping-cart"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="cocoa.jpg" alt="Sol de Oro Zero">
+                </div>
+                <div class="producto-info">
+                    <h3>Cacao Power</h3>
+                    <p class="producto-descripcion">Delicioso sabor de un chocolate intenso con un toque de avellana.
+                    </p>
+                    <div class="producto-detalles">
+                        <span class="producto-precio">$23.00 MXN</span>
+                        <button class="btn-agregar" data-id="4" data-nombre="Cacao Power" data-precio="23">
+                            <i class="fas fa-shopping-cart"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="herbal.jpg" alt="Sol de Oro Tropical">
+                </div>
+                <div class="producto-info">
+                    <h3>Refrescante Herbal</h3>
+                    <p class="producto-descripcion">Sabor ligero y refrescante de pepino, limon y menta</p>
+                    <div class="producto-detalles">
+                        <span class="producto-precio">$23.00 MXN</span>
+                        <button class="btn-agregar" data-id="5" data-nombre="Refrescante Herbal" data-precio="23">
+                            <i class="fas fa-shopping-cart"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="producto-card">
+                <div class="producto-imagen">
+                    <img src="tropical.jpg" alt="Sol de Oro Intenso">
+                </div>
+                <div class="producto-info">
+                    <h3>Energizante tropical</h3>
+                    <p class="producto-descripcion">Nuestra bebida clasica sabor mango, maracuya y limon.</p>
+                    <div class="producto-detalles">
+                        <span class="producto-precio">$23.00 MXN</span>
+                        <button class="btn-agregar" data-id="6" data-nombre="Energizante tropical" data-precio="23">
+                            <i class="fas fa-shopping-cart"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contenedor" id="carrito">
+        <section class="seccion carrito-seccion">
+            <h2>Tu Carrito de Compras</h2>
+
+            <div id="carrito-vacio" class="carrito-mensaje">
+                <i class="fas fa-shopping-cart carrito-icono"></i>
+                <p>Tu carrito está vacío</p>
+                <a href="#productos" class="btn-comprar">Ver productos</a>
+            </div>
+
+            <div id="carrito-items" class="carrito-items">
+
+            </div>
+
+            <div id="carrito-total" class="carrito-total">
+                <h3>Total: <span id="total-precio">$0.00 MXN</span></h3>
+                <button id="btn-vaciar" class="btn-vaciar">Vaciar carrito</button>
+                <button id="btn-pagar" class="btn-pagar">Proceder al pago</button>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="contenedor" id="contacto">
+        <section class="seccion contacto-seccion">
+            <h2>Contacto</h2>
+
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <h3>Información de Contacto</h3>
+                    <ul class="contacto-lista">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Insurgentes Sur 1234, Col. Del Valle, CDMX</li>
+                        <li><i class="fas fa-phone"></i> +52 (56) 13552358</li>
+                        <li><i class="fas fa-envelope"></i> soldeoro@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Lunes a Viernes: 8:00 - 18:00</li>
+                    </ul>
+
+                    <h3>Síguenos en Redes Sociales</h3>
+                    <div class="redes-sociales">
+                        <a href="https://facebook.com/soldeoroenergy" target="_blank" class="red-social"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/soldeoroenergy" target="_blank" class="red-social"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/soldeoroenergy" target="_blank" class="red-social"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com/soldeoroenergy" target="_blank" class="red-social"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="contacto-formulario">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form id="formulario-contacto">
+                        <div class="form-grupo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="contenedor footer-contenido">
+            <div class="footer-logo">
+                <img src="logosol.jpg" alt="Logo Sol de Oro" width="50">
+                <p>Energía natural para tu día</p>
+            </div>
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#carrito">Carrito</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2025 Sol de Oro - Bebida Energética Artesanal. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JSsol.js"></script>
+</body>
+
+</html>
